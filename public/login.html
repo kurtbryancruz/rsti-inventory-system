@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in · RSTI Inventory</title>
+<link rel="icon" href="img/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class="lg2">
+ <section class="lbrand" aria-label="About RSTI Inventory">
+  <div class="lbin">
+   <div class="lblogo"><img src="img/logo.png" alt="Roentgen Separation Technologie Inc."></div>
+   <h1>RSTI Inventory</h1>
+   <p class="lbsub">Chemical stock, pull-outs and approvals, all in one place.</p>
+   <ul class="lbl">
+    <li><span><svg class="i" viewBox="0 0 24 24"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><div><b>Know what is in stock</b><small>Two warehouses, expiry dates and reorder alerts.</small></div></li>
+    <li><span><svg class="i" viewBox="0 0 24 24"><path d="M7 4L3 8l4 4M3 8h14M17 12l4 4-4 4M21 16H7"/></svg></span><div><b>Request and approve pull-outs</b><small>Every release comes with a signed A4 PDF.</small></div></li>
+    <li><span><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Keep a clear record</b><small>Every change is saved in History.</small></div></li>
+   </ul>
+  </div>
+ </section>
+ <section class="lform">
+  <form class="lcard" onsubmit="login(event)">
+   <div class="lmlogo"><img src="img/logo.png" alt="Roentgen Separation Technologie Inc."></div>
+   <h2>Welcome back</h2>
+   <p class="mut lsub">Sign in to continue to RSTI Inventory.</p>
+   <label for="u">Username</label>
+   <div class="lgf"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg><input id="u" autocomplete="username" autocapitalize="none" spellcheck="false" required autofocus></div>
+   <label for="p">Password</label>
+   <div class="lgf"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg><input id="p" type="password" autocomplete="current-password" required onkeyup="caps(event)" onkeydown="caps(event)"><button type="button" class="lgshow" id="ps" onclick="showPw()" aria-pressed="false" aria-label="Show password">Show</button></div>
+   <p class="lcaps" id="caps" hidden>Caps Lock is on.</p>
+   <p id="err" class="lerr" role="alert"></p>
+   <button class="btn lgb" id="go"><span class="lbt">Sign in</span></button>
+   <p class="mut lfoot">Forgot your password? Ask an admin to reset it for you.</p>
+  </form>
+ </section>
+</div>
+<script src="js/login.js"></script>
+</body></html>

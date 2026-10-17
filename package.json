@@ -1,0 +1,21 @@
+{
+  "name": "rsti-inventory",
+  "version": "1.0.0",
+  "description": "RSTI chemical inventory system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init-db": "node db/init.js"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-session": "^2.1.0",
+    "express": "^4.19.2",
+    "jpeg-js": "^0.4.4",
+    "pdfkit": "^0.20.2",
+    "pngjs": "^7.0.0"
+  }
+}
